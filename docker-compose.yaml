@@ -1,0 +1,13 @@
+version: "3"
+services:
+  lvmh_client:
+    container_name: lvmh_frontend
+    build: ./frontend/
+    restart: unless-stopped
+    environment:
+      FRONT_PORT: ${FRONTEND_PORT}
+    ports:
+      - "${FRONTEND_PORT}:${FRONTEND_PORT}"
+    volumes:
+      - ./frontend:/home/node/app
+      - /home/node/app/node_modules
