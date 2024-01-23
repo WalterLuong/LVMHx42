@@ -24,8 +24,8 @@ const Experiences = () => {
     <div className='bg-white h-screen flex justify-center items-center flex-col'>
       Experiences
       <div className='flex gap-5 flex-wrap'>
-        {activitiesList.map((activity) => (
-          <ActivityCard {...activity} />
+        {activitiesList.map((activity, index) => (
+          <ActivityCard {...activity} key={index} />
         ))}
       </div>
     </div>
