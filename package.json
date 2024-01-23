@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/node": "^20.11.5"
+  },
+  "dependencies": {
+    "@types/react": "^18.2.48"
   }
 }
