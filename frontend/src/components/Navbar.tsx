@@ -10,10 +10,12 @@ const Navbar = () => {
       <Link to='/login'>
         <AccountCircle className='font-bold' />
       </Link>
-	  <Link to='/wait'>
-	 	 <Favorite className='font-bold' />
-		</Link>
-      <Settings className='font-bold' />
+      <Link to='/wait'>
+        <Favorite className='font-bold' />
+      </Link>
+      <Link to='/experiences'>
+        <Settings className='font-bold' />
+      </Link>
     </div>
   );
 };
