@@ -10,7 +10,9 @@ const Navbar = () => {
       <Link to='/login'>
         <AccountCircle className='font-bold' />
       </Link>
-      <Favorite className='font-bold' />
+	  <Link to='/wait'>
+	 	 <Favorite className='font-bold' />
+		</Link>
       <Settings className='font-bold' />
     </div>
   );
