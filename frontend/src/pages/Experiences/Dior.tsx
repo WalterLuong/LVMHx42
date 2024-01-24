@@ -12,9 +12,12 @@ const Dior = () => {
     <div className='bg-slate-200 h-screen flex flex-col items-center py-5 overflow-auto pb-20'>
       <CloseButton />
       <img src='LV-logo.svg' alt='LV logo' className='h-20 w-20 my-10' />
-      <p className='self-start font-bold text-2xl border-b-LV-dark-yellow border-2 w-full pl-3'>
-        Galerie <span className='text-LV-dark-yellow'>D</span>ior
-      </p>
+      <div className='w-full border-b-LV-dark-yellow border-2 flex justify-between px-5 items-center'>
+        <p className='self-start font-bold text-2xl'>
+          Galerie <span className='text-LV-dark-yellow'>D</span>ior
+        </p>
+        <p className='text-xs italic'>Environ 30 minutes</p>
+      </div>
       <div className='h-52 overflow-hidden mb-5'>
         <img src='dior.jpg' alt='dior' className='' />
       </div>
