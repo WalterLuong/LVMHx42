@@ -17,6 +17,10 @@ const Join  = () => {
 		{
 			title: "Entrer dans le magasin",
 			description: "Vous pouvez entrer dans le magasin"
+		},
+		{
+			title: "Entrer dans le magasin",
+			description: "Vous pouvez entrer dans le magasin"
 		}
 	]
 
@@ -25,8 +29,8 @@ const Join  = () => {
 	<div className="mt-[100px]">
 		<Timeline info={info}/>
 	</div>
-	  <div className=" flex flex-col justify-center items-center m-4">
-		  <button className="pr-8 pl-8 pt-4 pb-4 border border-black rounded-xl">Rejoindre la queue</button>
+	  <div className=" flex flex-col justify-center items-center m-8">
+		  <button className="pr-10 pl-10 pt-2 pb-2 bg-black text-white rounded-xl">Rejoindre la queue</button>
 	  </div>
 	</div>
   </>
