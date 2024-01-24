@@ -12,6 +12,7 @@ const Wait = () => {
                 </div>
                 <div id='content' className='flex flex-auto flex-col text-center justify-around items-center'>
                     <div className='flex flex-col justify-center items-center pr-5 pl-5'>
+						<h4 className='text-bold text-lg text-nowrap'>Vous etes bien dans la file d'attente</h4>
                         <p>Nous vous remercions de votre patience</p>
                     </div>
                     <div className='flex flex-col flex-auto justify-evenly items-center'>
@@ -22,7 +23,6 @@ const Wait = () => {
                             <CircleLoader percentage={5} minutes={false} height={32} width={32} />
                         </div>
                     </div>
-                  
                 </div>
                 <div id='cta' className='w-screen flex justify-center mb-6 items-center'>
                     <Link to='/experiences'>
