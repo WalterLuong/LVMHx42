@@ -8,6 +8,7 @@ import Login from './pages/login/Login.tsx';
 import Wait from './pages/wait/Wait.tsx';
 import Experiences from './pages/Experiences/Experiences.tsx';
 import TestPage from './pages/testing/TestPage.jsx';
+import Dior from './pages/Experiences/Dior.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/wait' element={<Wait />} />
         <Route path='/experiences' element={<Experiences />} />
         <Route path='/test' element={<TestPage />} />
+        <Route path='/dior' element={<Dior />} />
       </Routes>
     </Router>
   </React.StrictMode>
