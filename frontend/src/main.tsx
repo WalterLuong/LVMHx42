@@ -9,10 +9,13 @@ import Wait from './pages/wait/Wait.tsx';
 import Experiences from './pages/Experiences/Experiences.tsx';
 import TestPage from './pages/testing/TestPage.jsx';
 import Dior from './pages/Experiences/Dior.tsx';
+import TopNav from './components/TopNav.tsx';
+import Join from './pages/Join/Join.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
+	  <TopNav/>
       <Navbar />
       <Routes>
         <Route path='/' element={<App />} />
@@ -21,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/experiences' element={<Experiences />} />
         <Route path='/test' element={<TestPage />} />
         <Route path='/dior' element={<Dior />} />
+		<Route path='/join' element={<Join />} />
       </Routes>
     </Router>
   </React.StrictMode>
