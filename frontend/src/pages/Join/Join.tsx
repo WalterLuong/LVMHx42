@@ -7,21 +7,25 @@ import { Info } from "../../components/Timeline";
 const Join  = () => {
 	const info : Info[] = [
 		{
-			title: "Entrer dans le magasin",
-			description: "Vous pouvez entrer dans le magasin"
+			title: "Être déja client fidèle chez LV",
+			description: "Il faut avoir efectué au moins un achat chez LV"
 		},
 		{
-			title: "Temps d'attente estime a",
-			description: "10 - 20 minutes"
+			title: "Connectez-vous",
+			description: "Connectez-vous avec votre compte LV pour vous identifier"
 		},
 		{
-			title: "Entrer dans le magasin",
-			description: "Vous pouvez entrer dans le magasin"
+			title: "Rejoindre la queue virtuelle",
+			description: "Une fois identifié vous pouvez rejoindre la queue virtuelle"
 		},
 		{
-			title: "Entrer dans le magasin",
-			description: "Vous pouvez entrer dans le magasin"
-		}
+			title: "Vivez l'expérience LV autours de votre magasin en attendant",
+			description: "Découvrez en attendant les experiences de luxes LV autours de votre magasin"
+		},
+        {
+            title: "Recevez un SMS pour vous quand c'est votre tour",
+            description: "Vous recevrez un SMS quand c'est votre tour pour entrer dans le magasin"
+        }
 	]
 
 	return <>
@@ -30,7 +34,9 @@ const Join  = () => {
 		<Timeline info={info}/>
 	</div>
 	  <div className=" flex flex-col justify-center items-center m-8">
-		  <button className="pr-10 pl-10 pt-2 pb-2 bg-black text-white rounded-xl">Rejoindre la queue</button>
+        <Link to='/login'>
+		  <button className="pr-10 border shadow-lg pl-10 pt-2 pb-2 bg-black text-white rounded-xl">Connectez vous</button>
+        </Link>
 	  </div>
 	</div>
   </>

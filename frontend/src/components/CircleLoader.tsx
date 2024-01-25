@@ -3,12 +3,12 @@ import React from 'react';
 const CircleLoader = ({ percentage, minutes, height, width }: { percentage: number, minutes: boolean, height: number, width:number }) => {
 
     const conicGradient = minutes ? `conic-gradient(black ${percentage}%, 0, white ${percentage}%)` : ''
-    const CircleClass = `h-${height} w-${width} flex justify-center items-center shadow-xl rounded-full bg-[#BBA98C]`
+    const CircleClass = `flex justify-center items-center shadow-xl rounded-full bg-[#BBA98C]`
     const description = minutes ? 'Mnutes restantes' : 'Personnes devant vous'
   return (
     <>
     <div className='flex flex-col w-full h-full items-center justify-around mt-2'>
-      <div className={CircleClass}>
+      <div className={CircleClass} style={{height : `${height}px`, width: `${width}px`}}>
           <div className="h-[90%] w-[90%] rounded-full overflow-hidden">
                 <div
                   className="h-full w-full flex justify-center items-center shadow-xl"
