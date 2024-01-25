@@ -15,6 +15,8 @@ import Explorez from './pages/Explorez/Explorez.tsx';
 import MyLV from './pages/MyLV/MyLV.tsx';
 import MyQueue from './pages/MyQueue/MyQueue.tsx';
 import Tutorial from './pages/Tutorial/Tutorial.tsx';
+import Map from './pages/Map/Map.tsx';
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
@@ -32,6 +34,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/tutorial' element={<Tutorial />} />
         <Route path='/join' element={<Join />} />
         <Route path='mylv/myqueue' element={<MyQueue />} />
+        <Route path='mylv/myqueue/map' element={<Map />} />
       </Routes>
     </Router>
   </React.StrictMode>
