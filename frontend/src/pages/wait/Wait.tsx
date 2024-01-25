@@ -9,7 +9,7 @@ import { fadeIn } from "../../utils/variants.tsx";
 const Wait = () => {
   const height = 200;
   return (
-    <div className='bg-white h-svh flex flex-col'>
+    <div className='bg-white h-svh flex flex-col pt-32 pb-16'>
       <div className='flex flex-col justify-around'>
         <div
           id='content'
@@ -27,7 +27,7 @@ const Wait = () => {
               invitons to de explorer nos
               <span className='underline'>
                 {" "}
-                <Link to='/experiences'>expériences de luxe</Link>
+                <Link to='/map'>expériences de luxe</Link>
               </span>{" "}
             </p>
           </motion.div>
@@ -62,16 +62,14 @@ const Wait = () => {
           id='cta'
           className='w-full flex flex-col justify-center mb-6 items-center mt-4'
         >
-          <Link to='//mylv/myqueue/map'>
+          <Link to='/map'>
             <button className='border border-solid shadow-sm bg-black text-white m-2 pr-8 pt-4 pb-4 pl-8  w-[90vw]'>
               Découvrez nos expériences
             </button>
           </Link>
-          <Link to='/experiences'>
-            <span className='underline text-black text-xs pr-8 pt-2 pb-2 pl-8 w-[90vw] '>
-              Quitter la file d'attente
-            </span>
-          </Link>
+          <span className='underline text-black text-xs py-2 px-8 self-center '>
+            Quitter la file d'attente
+          </span>
         </motion.div>
       </div>
     </div>

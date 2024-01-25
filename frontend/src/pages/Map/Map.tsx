@@ -2,7 +2,7 @@ import ActivityCard, {
   ActivityCardProps,
 } from "../Experiences/components/ActivityCard";
 import { waitTime } from "../../data/waitTime";
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
 
 const coffee: ActivityCardProps = {
   src: "../../LV-coffee.jpg",
@@ -16,7 +16,7 @@ const coffee: ActivityCardProps = {
 const walkaround: ActivityCardProps = {
   src: "../../LV-bg.jpg",
   alt: "LV shop",
-  title: "Balade autour de la boutique",
+  title: "Promenade autour de la boutique",
   address: "101 avenue des Champs Élysés",
   discount: "Un bon bol d'air frais",
   time: 20,
@@ -28,17 +28,17 @@ const macarons: ActivityCardProps = {
   title: "La durée",
   address: "75 avenue des Champs Élysés",
   discount: "Un macaron offert",
-  time: 30
+  time: 30,
 };
 
 const dior: ActivityCardProps = {
-  src: "../../dior.jpg",
+  src: "../../tuileries.jpg",
   alt: "Dior",
-  title: "Galerie Dior",
-  address: "30 avenue Montaigne",
-  discount: "Nouvelle exposition Dior jusqu'au 23 avril",
+  title: "Légende des Tuileries",
+  address: "Jardin des Tuileries",
+  discount: "Visite enquête insolite du jardin des Tuileries",
   redirect: "/dior",
-  time: 40
+  time: 40,
 };
 
 const arc: ActivityCardProps = {
@@ -47,7 +47,7 @@ const arc: ActivityCardProps = {
   title: "Arc de Triomphe",
   address: "Place Charles de Gaulle",
   discount: "C'est toujours beau à voir.",
-  time: 50
+  time: 50,
 };
 
 const ary: ActivityCardProps = {
@@ -56,7 +56,7 @@ const ary: ActivityCardProps = {
   title: "Galerie Ary Jan",
   address: "32 avenue Marceau",
   discount: "Exposition Cartier",
-  time: 30
+  time: 30,
 };
 
 const activitiesList: ActivityCardProps[] = [
@@ -70,7 +70,7 @@ const activitiesList: ActivityCardProps[] = [
 
 const Map = () => {
   return (
-    <div className='py-16 h-svh flex-col gap-3 flex'>
+    <div className='pb-16 pt-28 h-svh flex-col gap-3 flex'>
       <div className='h-[50%] overflow-auto touch-auto'>
         <img
           src='../../map.png'
@@ -78,11 +78,16 @@ const Map = () => {
           className='w-[300%] max-w-none h-auto'
         />
       </div>
-      <div className="flex  justify-center items-center">
-        <div className="flex text-center items-start justify-center py-4  w-[90%] text-sm px-2">
-            <h2 className=" text-lg"><AccessTimeIcon /><span className="ml-2">Expériences en moins de {waitTime.max} minutes</span></h2>
+      <div className='flex  justify-center items-center'>
+        <div className='flex text-center items-start justify-center py-4  w-[90%] text-sm px-2'>
+          <h2 className=' text-lg'>
+            <AccessTimeIcon />
+            <span className='ml-2'>
+              Expériences en moins de {waitTime.max} minutes
+            </span>
+          </h2>
         </div>
-    </div>
+      </div>
       <div className='flex items-center overflow-auto gap-5 px-2'>
         {activitiesList.map((activity, index) => (
           <ActivityCard {...activity} key={index} />

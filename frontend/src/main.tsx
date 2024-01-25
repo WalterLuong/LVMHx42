@@ -33,8 +33,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path='/mylv' element={<MyLV />} />
         <Route path='/tutorial' element={<Tutorial />} />
         <Route path='/join' element={<Join />} />
-        <Route path='mylv/myqueue' element={<MyQueue />} />
-        <Route path='mylv/myqueue/map' element={<Map />} />
+        <Route path='myqueue' element={<MyQueue />} />
+        <Route path='map' element={<Map />} />
       </Routes>
     </Router>
   </React.StrictMode>

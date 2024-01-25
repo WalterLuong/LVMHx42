@@ -29,7 +29,7 @@ const ActivityCard = (props: ActivityCardProps) => {
 
   return (
     <div
-      className="group h-64 w-40 min-w-40 [perspective:1000px]"
+      className='group h-64 w-40 min-w-40 [perspective:1000px]'
       onClick={handleCardClick}
     >
       <div
@@ -37,25 +37,22 @@ const ActivityCard = (props: ActivityCardProps) => {
           isFlipped ? "[transform:rotateY(180deg)]" : ""
         }`}
       >
-        <div className="absolute inset-0">
+        <div className='absolute inset-0'>
           <img
-            className="h-full w-full object-cover rounded-xl shadow-lg shadow-black/40"
+            className='h-full w-full object-cover rounded-xl shadow-lg shadow-black/40'
             src={props.src}
             alt={props.alt}
           />
         </div>
-        <div className="absolute inset-0 h-full w-full justify-center rounded-xl bg-black/60 p-2 text-center flex flex-col gap-5 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
-          <h1 className="font-bold ">{props.title}</h1>
+        <div className='absolute inset-0 h-full w-full justify-center rounded-xl bg-black/60 p-2 text-center flex flex-col gap-5 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]'>
+          <h1 className='font-bold '>{props.title}</h1>
           <div>
-            <p className="text-sm font-bold">{props.time} minutes</p>
-            <p className="italic text-xs">{props.address}</p>
+            <p className='text-sm font-bold'>{props.time} minutes</p>
+            <p className='italic text-xs'>{props.address}</p>
           </div>
-          <p className="font-bold">{props.discount}</p>
-          <button
-            className="border-2 border-white rounded-full"
-            onClick={handleRedirect}
-          >
-            En savoir plus
+          <p className='font-bold'>{props.discount}</p>
+          <button className='border-2 border-white rounded-full backdrop-blur-lg'>
+            Y aller
           </button>
         </div>
       </div>
