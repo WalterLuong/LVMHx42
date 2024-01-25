@@ -15,6 +15,7 @@ import Explorez from "./pages/Explorez/Explorez.tsx";
 import MyLV from "./pages/MyLV/MyLV.tsx";
 import MyQueue from "./pages/MyQueue/MyQueue.tsx";
 import Map from "./pages/Map/Map.tsx";
+import Tutorial from "./pages/Tutorial/Tutorial.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
