@@ -11,15 +11,14 @@ const Wait = () => {
 	return (
 		<div className='bg-white h-screen flex flex-col '>
             <div className='h-full mb-12 flex flex-col mt-[70px] justify-around'>
-         
                 <div id='content' className='flex flex-col text-center justify-around items-center'>
                     <motion.div
                     variants={fadeIn('up', 0.2)}
                     initial='hidden'
                     animate='show'
                      className='flex flex-col justify-center items-center pr-5 pl-5'>
-						<h4 className='font-bold text-2xl text-nowrap'>BIENVENUE WALTER</h4>
-                        <p className='text-sm'>Nous vous remercions de votre patience. En attendons nous vous invitons to de explorer nos<span className='underline'> <Link to='/experiences'>expériences de luxe</Link></span> </p>
+						<h4 className='font-bold text-2xl text-nowrap'>VOUS ÊTES BIEN DANS LA QUEUE</h4>
+                        <p className='text-sm'>Nous vous remercions de votre patience. En attendant nous vous invitons to de explorer nos<span className='underline'> <Link to='/experiences'>expériences de luxe</Link></span> </p>
                     </motion.div>
                     <motion.div 
                         variants={fadeIn('right', 0.5)}
