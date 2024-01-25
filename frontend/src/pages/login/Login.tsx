@@ -27,7 +27,7 @@ const Login = () => {
       setUsername('');
       setPassword('');
       setError('');
-      navigate('/');
+      navigate('/join');
     } else {
       setError('Identifiants incorrects');
     }

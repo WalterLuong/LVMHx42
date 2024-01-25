@@ -1,4 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { navAnim } from '../utils/variants.tsx';
 
 const Navbar = () => {
   const location = useLocation();
@@ -9,7 +11,11 @@ const Navbar = () => {
         <Link to='/explore'>
           <p>Explorez</p>
           {location.pathname === '/explore' && (
-            <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
+            <motion.img 
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+            src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
           )}
         </Link>
       </div>
@@ -17,7 +23,11 @@ const Navbar = () => {
         <Link to='/login'>
           <p>Catalogue</p>
           {location.pathname === '/login' && (
-            <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
+            <motion.img 
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+            src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
           )}
         </Link>
       </div>
@@ -25,7 +35,11 @@ const Navbar = () => {
         <Link to='/wait'>
           <p>Services</p>
           {location.pathname === '/wait' && (
-            <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
+            <motion.img 
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+            src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
           )}
         </Link>
       </div>
@@ -33,15 +47,23 @@ const Navbar = () => {
         <Link to='/mylv'>
           <p>MyLV</p>
           {location.pathname === '/mylv' && (
-            <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
+            <motion.img 
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+            src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
           )}
         </Link>
       </div>
       <div className='flex flex-col items-center'>
         <Link to='/join'>
             <p>Panier</p>
-            {location.pathname === '/test' && (
-            <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
+            {location.pathname === '/join' && (
+            <motion.img
+                variants={navAnim}
+                initial='hidden'
+                animate='show'
+                src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
             )}
         </Link>
       </div>

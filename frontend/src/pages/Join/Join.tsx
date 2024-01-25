@@ -15,12 +15,14 @@ const Join = () => {
                         <h1 className='text-white text-[2em]'>{waitTime.max} minutes d'attente</h1>
                     </div>
                 </div>
-                <span className='text-center bold p-4'><GroupIcon /> 5 personnes devant</span>
+                <span className='text-center bold p-4'><GroupIcon /> 5 personnes dans la queue</span>
 
                 <div className='flex flex-col h-[250px] justify-center items-center m-8'>
-                    <button className='bg-black w-full pr-8 pl-8 pt-4 pb-4 text-white text-lg'>
-                        Rejoindre la queue
-                    </button>
+                    <Link to='/wait' className='w-full'>
+                        <button className='bg-black w-full pr-8 pl-8 pt-4 pb-4 text-white text-lg'>
+                            Rejoindre la queue
+                        </button>
+                    </Link>
                     <button className='bg-white border border-black mt-4 w-full pr-8 pl-8 pt-4 pb-4 text-black text-lg'>
                         Prendre rendez-vous
                     </button>
