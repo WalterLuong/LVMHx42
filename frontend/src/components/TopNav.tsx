@@ -8,12 +8,12 @@ const TopNav = () => {
   const location = useLocation();
   return (
     <>
-      {location.pathname !== '/explore' ? (
-        <div className='flex absolute top-0 z-50 bg-white flex-row justify-center items-center h-[60px] w-[100%]'>
+      {location.pathname !== "/explore" && location.pathname !== "/login" ? (
+        <div className="flex absolute top-0 z-50 bg-white flex-row justify-center items-center h-[60px] w-[100%]">
           <img
             src={burgerIcon}
-            alt='burger'
-            className='h-8 w-8 absolute left-4 text-black'
+            alt="burger"
+            className="h-8 w-8 absolute left-4 text-black"
           />
           <Link to='/'>
             <img
@@ -24,8 +24,8 @@ const TopNav = () => {
           </Link>
           <img
             src={Recherche}
-            alt='burger'
-            className='h-8 w-8 absolute right-4 text-black'
+            alt="burger"
+            className="h-8 w-8 absolute right-4 text-black"
           />
         </div>
       ) : (
