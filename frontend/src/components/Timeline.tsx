@@ -29,6 +29,7 @@ const Timeline: React.FC<TimelineProps> = ({info }) => {
 							<img src={fleur} alt="fleur" className="left-2 h-[28px] w-[28px]"/>
 						</motion.div>
 						<motion.div
+                            variants={fadeIn('left', delay )}
                             initial="hidden"
                             animate="show"
                                 className="table-cell align-bottom flex-col h-full w-[260px] text-left pr-4 pl-4">
