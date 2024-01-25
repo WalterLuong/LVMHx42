@@ -38,10 +38,10 @@ const Wait = () => {
                     initial='hidden'
                     animate='show'
                 id='cta' className='w-full flex flex-col justify-center mb-6 items-center mt-4'>
-                    <Link to='/experiences'>
+                    <Link to='/mylv/myqueue/map'>
                         <button className='border border-solid shadow-sm bg-black text-white m-2 pr-8 pt-4 pb-4 pl-8  w-[90vw]'>Découvrez nos expériences</button>
                     </Link>
-                    <Link to='/experiences'>
+                    <Link to='/mylv/myqueue/map'>
                         <span className='underline text-black text-xs pr-8 pt-2 pb-2 pl-8 w-[90vw] '>Quitter la file d'attente</span>
                     </Link>
                 </motion.div>

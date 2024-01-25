@@ -1,4 +1,4 @@
-import LVStore from "./assets/LV-store.jpg";
+import LVStore from "./assets/queue.jpg";
 import { waitTime } from "./data/waitTime";
 import { Link } from "react-router-dom";
 import { fadeIn } from "./utils/variants";
@@ -10,7 +10,7 @@ function App() {
     <>
       <div className="bg-white h-[90vh] w-screen overflow-hidden flex flex-col justify-around">
 		<div className="flex h-3/5 bg-cover bg-center relative font-sans">
-			<img src={LVStore} alt="LVStore" className="w-full h-full object-cover filter brightness-50"/>
+			<img src={LVStore} alt="LVStore" className="w-full h-full object-cover filter brightness-70"/>
 		</div>
 		<div className=" flex flex-col justify-center items-center m-4">
             <div className="flex flex-col flex-auto  text-left pr-4 pl-4">
@@ -28,7 +28,6 @@ function App() {
                 variants={fadeIn('up', 0.6 )}
                 initial="hidden"
                 animate="show"
-
                 >
                     <Link to='/tutorial'>
                         <div className="flex justify-left mt-5 text-left w-full">

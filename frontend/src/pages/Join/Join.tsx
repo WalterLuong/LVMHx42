@@ -26,7 +26,7 @@ const Join = () => {
                             <h1 className='text-white text-[2em]'>{waitTime.max} minutes d'attente</h1>
                         </div>
                     </div>
-                    <span className='text-center bold p-4'><GroupIcon /> 5 personnes dans la queue</span>
+                    <span className='flex w-full justify-center text-center bold p-4'><GroupIcon /> 5 personnes dans la queue</span>
                 </motion.div>
 
                 <motion.div 

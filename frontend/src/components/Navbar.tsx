@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className="bg-black text-white font-bold flex absolute bottom-0 w-screen justify-around h-16 z-50 py-2">
+    <div className="bg-black text-white  flex absolute bottom-0 w-screen justify-around h-16 z-50 py-2">
       <div className="flex flex-col items-center">
         <Link to="/explore">
           <p>Explorez</p>

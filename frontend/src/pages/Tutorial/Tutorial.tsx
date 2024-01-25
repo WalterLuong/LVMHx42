@@ -9,10 +9,6 @@ import { motion } from "framer-motion";
 const Tutorial = () => {
     const info: Info[] = [
         {
-            title: "Être déja client fidèle chez LV",
-            description: "Il faut avoir efectué au moins un achat chez LV"
-        },
-        {
             title: "Connectez-vous",
             description: "Connectez-vous avec votre compte LV pour vous identifier"
         },
@@ -37,7 +33,7 @@ const Tutorial = () => {
                 variants={fadeIn('up', 0.2)}
                 initial="hidden"
                 animate="show"
-                className="text-xl font-bold uppercase w-[80%]">Comment rejoindre la queue virutel ?</motion.h1>
+                className="text-xl font-bold uppercase w-[80%]">Comment rejoindre la queue virtuel ?</motion.h1>
             </div>
             <div className="">
                 <Timeline info={info} />

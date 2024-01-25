@@ -1,6 +1,8 @@
 import ActivityCard, {
   ActivityCardProps,
 } from "../Experiences/components/ActivityCard";
+import { waitTime } from "../../data/waitTime";
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 const coffee: ActivityCardProps = {
   src: "../../LV-coffee.jpg",
@@ -8,6 +10,7 @@ const coffee: ActivityCardProps = {
   title: "Café Maxime Frédéric",
   address: "2 rue du Pont Neuf",
   discount: "10% de réduction sur la commande",
+  time: 10,
 };
 
 const walkaround: ActivityCardProps = {
@@ -16,6 +19,7 @@ const walkaround: ActivityCardProps = {
   title: "Balade autour de la boutique",
   address: "101 avenue des Champs Élysés",
   discount: "Un bon bol d'air frais",
+  time: 20,
 };
 
 const macarons: ActivityCardProps = {
@@ -24,6 +28,7 @@ const macarons: ActivityCardProps = {
   title: "La durée",
   address: "75 avenue des Champs Élysés",
   discount: "Un macaron offert",
+  time: 30
 };
 
 const dior: ActivityCardProps = {
@@ -33,6 +38,7 @@ const dior: ActivityCardProps = {
   address: "30 avenue Montaigne",
   discount: "Nouvelle exposition Dior jusqu'au 23 avril",
   redirect: "/dior",
+  time: 40
 };
 
 const arc: ActivityCardProps = {
@@ -41,6 +47,7 @@ const arc: ActivityCardProps = {
   title: "Arc de Triomphe",
   address: "Place Charles de Gaulle",
   discount: "C'est toujours beau à voir.",
+  time: 50
 };
 
 const ary: ActivityCardProps = {
@@ -49,6 +56,7 @@ const ary: ActivityCardProps = {
   title: "Galerie Ary Jan",
   address: "32 avenue Marceau",
   discount: "Exposition Cartier",
+  time: 30
 };
 
 const activitiesList: ActivityCardProps[] = [
@@ -70,7 +78,12 @@ const Map = () => {
           className='w-[300%] max-w-none h-auto'
         />
       </div>
-      <div className='flex overflow-auto gap-5 px-2'>
+      <div className="flex  justify-center items-center">
+        <div className="flex text-center items-start justify-center py-4  w-[90%] text-sm px-2">
+            <h2 className=" text-lg"><AccessTimeIcon /><span className="ml-2">Expériences en moins de {waitTime.max} minutes</span></h2>
+        </div>
+    </div>
+      <div className='flex items-center overflow-auto gap-5 px-2'>
         {activitiesList.map((activity, index) => (
           <ActivityCard {...activity} key={index} />
         ))}

@@ -8,6 +8,7 @@ export type ActivityCardProps = {
   address: string;
   discount: string;
   redirect?: string;
+  time?: number;
 };
 
 const ActivityCard = (props: ActivityCardProps) => {
@@ -45,7 +46,10 @@ const ActivityCard = (props: ActivityCardProps) => {
         </div>
         <div className="absolute inset-0 h-full w-full justify-center rounded-xl bg-black/60 p-2 text-center flex flex-col gap-5 text-white [transform:rotateY(180deg)] [backface-visibility:hidden]">
           <h1 className="font-bold ">{props.title}</h1>
-          <p className="italic text-xs">{props.address}</p>
+          <div>
+            <p className="text-sm font-bold">{props.time} minutes</p>
+            <p className="italic text-xs">{props.address}</p>
+          </div>
           <p className="font-bold">{props.discount}</p>
           <button
             className="border-2 border-white rounded-full"
