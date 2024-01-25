@@ -14,7 +14,7 @@ import Join from './pages/Join/Join.tsx';
 import Explorez from './pages/Explorez/Explorez.tsx';
 import MyLV from './pages/MyLV/MyLV.tsx';
 import MyQueue from './pages/MyQueue/MyQueue.tsx';
-
+import Tutorial from './pages/Tutorial/Tutorial.tsx';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Router>
@@ -29,6 +29,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path='/dior' element={<Dior />} />
         <Route path='/explore' element={<Explorez />} />
         <Route path='/mylv' element={<MyLV />} />
+        <Route path='/tutorial' element={<Tutorial />} />
         <Route path='/join' element={<Join />} />
         <Route path='mylv/myqueue' element={<MyQueue />} />
       </Routes>

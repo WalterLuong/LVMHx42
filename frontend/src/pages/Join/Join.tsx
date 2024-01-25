@@ -1,45 +1,33 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import LVStore from "../../assets/LV-store.jpg";
-import Timeline from "../../components/Timeline";
-import { Info } from "../../components/Timeline";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { waitTime } from '../../data/waitTime';
+import GroupIcon from '@mui/icons-material/Group';
 
-const Join  = () => {
-	const info : Info[] = [
-		{
-			title: "Être déja client fidèle chez LV",
-			description: "Il faut avoir efectué au moins un achat chez LV"
-		},
-		{
-			title: "Connectez-vous",
-			description: "Connectez-vous avec votre compte LV pour vous identifier"
-		},
-		{
-			title: "Rejoindre la queue virtuelle",
-			description: "Une fois identifié vous pouvez rejoindre la queue virtuelle"
-		},
-		{
-			title: "Vivez l'expérience LV autours de votre magasin en attendant",
-			description: "Découvrez en attendant les experiences de luxes LV autours de votre magasin"
-		},
-        {
-            title: "Recevez un SMS pour vous quand c'est votre tour",
-            description: "Vous recevrez un SMS quand c'est votre tour pour entrer dans le magasin"
-        }
-	]
+const Join = () => {
+    return (
+        <div className='h-screen flex justify-around'>
+            <div className='bg-white h-[90vh] flex  flex-col m-auto'>
+                <div className='flex justify-center min-h-[150px] items-center mt-8'>
+                    <h1 className='text-3xl uppercase'>Rejoindre la queue</h1>
+                </div>
+                <div className='flex h-[200px] items-center flex-col justify-center'>
+                    <div className='shadow-sm h-[200px] pr-8 pl-8 pb-4 pt-4 m-auto bg-black flex items-center justify-center'>
+                        <h1 className='text-white text-[2em]'>{waitTime.max} minutes d'attente</h1>
+                    </div>
+                </div>
+                <span className='text-center bold p-4'><GroupIcon /> 5 personnes devant</span>
 
-	return <>
-	<div className="bg-white h-screen w-screen overflow-hidden">
-	<div className="mt-[100px]">
-		<Timeline info={info}/>
-	</div>
-	  <div className=" flex flex-col justify-center items-center m-8">
-        <Link to='/login'>
-		  <button className="pr-10 border shadow-lg pl-10 pt-2 pb-2 bg-black text-white rounded-xl">Connectez vous</button>
-        </Link>
-	  </div>
-	</div>
-  </>
+                <div className='flex flex-col h-[250px] justify-center items-center m-8'>
+                    <button className='bg-black w-full pr-8 pl-8 pt-4 pb-4 text-white text-lg'>
+                        Rejoindre la queue
+                    </button>
+                    <button className='bg-white border border-black mt-4 w-full pr-8 pl-8 pt-4 pb-4 text-black text-lg'>
+                        Prendre rendez-vous
+                    </button>
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default Join;

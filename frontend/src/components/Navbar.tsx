@@ -38,10 +38,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className='flex flex-col items-center'>
-        <p>Panier</p>
-        {location.pathname === '/test' && (
-          <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
-        )}
+        <Link to='/join'>
+            <p>Panier</p>
+            {location.pathname === '/test' && (
+            <img src='Fleur-LV.svg' alt='LV logo' className='w-full h-4 mt-1' />
+            )}
+        </Link>
       </div>
     </div>
   );

@@ -15,7 +15,7 @@ const CircleLoader = ({ percentage, minutes, height, width }: { percentage: numb
                   style={{ background: conicGradient }}
                   > 
                   
-                  <div className="flex justify-center items-center h-[90%] w-[90%] shadow-inner[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-full bg-[#BBA98C] text-black">
+                  <div className="flex justify-center items-center text-xl  h-[90%] w-[90%] shadow-inner[0_35px_60px_-15px_rgba(0,0,0,0.3)] rounded-full bg-[#BBA98C] text-black">
                       {percentage} {minutes ? 'minutes' : null }
                   </div>
               </div>
