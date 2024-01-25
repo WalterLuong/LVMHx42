@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <div className='bg-black text-white font-bold flex absolute bottom-0 w-screen justify-around h-16 z-50 py-2'>
+    <div className='bg-black text-white font-bold flex absolute mt-auto bottom-0 w-screen justify-around h-16 z-50 py-2'>
       <div className='flex flex-col items-center'>
         <Link to='/explore'>
           <p>Explorez</p>
@@ -23,24 +23,22 @@ const Navbar = () => {
         </Link>
       </div>
       <div className='flex flex-col items-center'>
-        <Link to='/login'>
-          <p>Catalogue</p>
-          {location.pathname === "/login" && (
-            <motion.img
-              variants={navAnim}
-              initial='hidden'
-              animate='show'
-              src='Fleur-LV.svg'
-              alt='LV logo'
-              className='w-full h-4 mt-1'
-            />
-          )}
-        </Link>
+        <p>Catalogue</p>
+        {location.pathname === "/catalogue" && (
+          <motion.img
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+            src='Fleur-LV.svg'
+            alt='LV logo'
+            className='w-full h-4 mt-1'
+          />
+        )}
       </div>
       <div className='flex flex-col items-center'>
-        <Link to='/wait'>
+        <Link to='/'>
           <p>Services</p>
-          {location.pathname === "/wait" && (
+          {location.pathname === "/service" && (
             <motion.img
               variants={navAnim}
               initial='hidden'
@@ -55,7 +53,10 @@ const Navbar = () => {
       <div className='flex flex-col items-center'>
         <Link to='/mylv'>
           <p>MyLV</p>
-          {location.pathname === "/mylv" && (
+          {(location.pathname === "/mylv" ||
+            location.pathname === "/join" ||
+            location.pathname === "/wait" ||
+            location.pathname === "/myqueue") && (
             <motion.img
               variants={navAnim}
               initial='hidden'
@@ -68,19 +69,17 @@ const Navbar = () => {
         </Link>
       </div>
       <div className='flex flex-col items-center'>
-        <Link to='/join'>
-          <p>Panier</p>
-          {location.pathname === "/join" && (
-            <motion.img
-              variants={navAnim}
-              initial='hidden'
-              animate='show'
-              src='Fleur-LV.svg'
-              alt='LV logo'
-              className='w-full h-4 mt-1'
-            />
-          )}
-        </Link>
+        <p>Panier</p>
+        {location.pathname === "/panier" && (
+          <motion.img
+            variants={navAnim}
+            initial='hidden'
+            animate='show'
+            src='Fleur-LV.svg'
+            alt='LV logo'
+            className='w-full h-4 mt-1'
+          />
+        )}
       </div>
     </div>
   );

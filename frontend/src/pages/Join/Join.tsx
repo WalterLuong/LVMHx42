@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 
 const Join = () => {
   return (
-    <div className='h-svh flex justify-around overflow-auto'>
-      <div className='bg-white h-[90vh] flex  flex-col m-auto'>
+    <div className='h-svh flex justify-around pt-28 pb-16'>
+      <div className='bg-white flex flex-col'>
         <motion.div
           variants={fadeIn("up", 0.2)}
           initial='hidden'
@@ -23,7 +23,7 @@ const Join = () => {
           animate='show'
         >
           <div className='flex h-[200px] items-center flex-col justify-center'>
-            <div className='shadow-sm h-[200px] pr-8 pl-8 pb-4 pt-4 m-auto bg-black flex items-center justify-center'>
+            <div className='shadow-sm h-[200px] px-8 py-4 m-auto bg-black flex items-center justify-center'>
               <h1 className='text-white text-[2em]'>
                 {waitTime.max} minutes d'attente
               </h1>
