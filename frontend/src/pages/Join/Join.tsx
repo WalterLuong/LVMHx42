@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const Join = () => {
   return (
-    <div className='h-screen flex justify-around'>
+    <div className='h-svh flex justify-around overflow-auto'>
       <div className='bg-white h-[90vh] flex  flex-col m-auto'>
         <motion.div
           variants={fadeIn("up", 0.2)}

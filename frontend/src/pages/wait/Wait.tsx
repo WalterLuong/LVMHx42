@@ -9,8 +9,8 @@ import { fadeIn } from "../../utils/variants.tsx";
 const Wait = () => {
   const height = 200;
   return (
-    <div className='bg-white h-svh flex flex-col '>
-      <div className='h-full mb-12 flex flex-col mt-[70px] justify-around'>
+    <div className='bg-white h-svh flex flex-col'>
+      <div className='flex flex-col justify-around'>
         <div
           id='content'
           className='flex flex-col text-center justify-around items-center'
