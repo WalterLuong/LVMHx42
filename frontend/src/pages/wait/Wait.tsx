@@ -1,10 +1,10 @@
-import React from 'react'
-import { waitTime } from '../../data/waitTime';
-import { Link } from 'react-router-dom';
-import CircleLoader from '../../components/CircleLoader';
-import '../../utils/variants.tsx';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../../utils/variants.tsx';
+import React from "react";
+import { waitTime } from "../../data/waitTime";
+import { Link } from "react-router-dom";
+import CircleLoader from "../../components/CircleLoader";
+import "../../utils/variants.tsx";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/variants.tsx";
 
 const Wait = () => {
     const height = 200;
