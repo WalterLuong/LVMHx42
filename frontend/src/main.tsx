@@ -30,9 +30,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path='/dior' element={<Dior />} />
         <Route path='/explore' element={<Explorez />} />
         <Route path='/mylv' element={<MyLV />} />
+        <Route path='/tutorial' element={<Tutorial />} />
         <Route path='/join' element={<Join />} />
-        <Route path='/mylv/myqueue' element={<MyQueue />} />
-        <Route path='/mylv/myqueue/map' element={<Map />} />
+        <Route path='mylv/myqueue' element={<MyQueue />} />
+        <Route path='mylv/myqueue/map' element={<Map />} />
       </Routes>
     </Router>
   </React.StrictMode>
