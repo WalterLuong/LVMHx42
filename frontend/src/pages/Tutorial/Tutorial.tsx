@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import LVStore from "../../assets/LV-store.jpg";
 import Timeline from "../../components/Timeline";
 import { Info } from "../../components/Timeline";
+import { fadeIn } from "../../utils/variants";
+import { motion } from "framer-motion";
 
 const Tutorial = () => {
     const info: Info[] = [
@@ -29,8 +31,15 @@ const Tutorial = () => {
     ]
 
     return <>
-        <div className="bg-white h-screen w-screen overflow-hidden">
-            <div className="mt-[100px]">
+        <div className="bg-white h-screen w-screen overflow-hidden mt-[70px]">
+            <div className="flex font-sans py-8 text-center items-center justify-center">
+                <motion.h1 
+                variants={fadeIn('up', 0.2)}
+                initial="hidden"
+                animate="show"
+                className="text-xl font-bold uppercase w-[80%]">Comment rejoindre la queue virutel ?</motion.h1>
+            </div>
+            <div className="">
                 <Timeline info={info} />
             </div>
             <div className=" flex flex-col justify-center items-center m-8">
