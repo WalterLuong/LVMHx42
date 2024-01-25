@@ -15,10 +15,10 @@ const itemsList: ProfileItemProps[] = [
 
 const MyLV = () => {
   return (
-    <div className="py-16 px-5 bg-white h-svh flex flex-col gap-5">
+    <div className='py-16 px-5 bg-white h-svh flex flex-col gap-5'>
       <h1>MyLV</h1>
-      <h1 className="text-5xl font-bold mt-10">Walter</h1>
-      <div className="overflow-auto">
+      <h1 className='text-5xl font-bold mt-10'>Walter</h1>
+      <div className='overflow-auto'>
         {itemsList.map((item, index) => {
           return <ProfileItem key={index} {...item} />;
         })}

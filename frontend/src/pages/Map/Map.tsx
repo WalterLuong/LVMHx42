@@ -62,15 +62,15 @@ const activitiesList: ActivityCardProps[] = [
 
 const Map = () => {
   return (
-    <div className="py-16 h-svh flex-col gap-3 flex">
-      <div className="h-[50%] overflow-auto touch-auto">
+    <div className='py-16 h-svh flex-col gap-3 flex'>
+      <div className='h-[50%] overflow-auto touch-auto'>
         <img
-          src="../../map.png"
-          alt="map"
-          className="w-[300%] max-w-none h-auto"
+          src='../../map.png'
+          alt='map'
+          className='w-[300%] max-w-none h-auto'
         />
       </div>
-      <div className="flex overflow-auto gap-5 px-2">
+      <div className='flex overflow-auto gap-5 px-2'>
         {activitiesList.map((activity, index) => (
           <ActivityCard {...activity} key={index} />
         ))}
