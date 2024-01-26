@@ -38,7 +38,7 @@ const Navbar = () => {
       <div className='flex flex-col items-center'>
         <Link to='/'>
           <p>Services</p>
-          {location.pathname === "/service" && (
+          {location.pathname === "/" && (
             <motion.img
               variants={navAnim}
               initial='hidden'
