@@ -32,11 +32,11 @@ const macarons: ActivityCardProps = {
 };
 
 const dior: ActivityCardProps = {
-  src: "../../tuileries.jpg",
+  src: "../../jardin.jpg",
   alt: "Dior",
-  title: "Légende des Tuileries",
+  title: "Visite du jardin Tuileries",
   address: "Jardin des Tuileries",
-  discount: "Visite enquête insolite du jardin des Tuileries",
+  discount: "De belles photos à prendre.",
   redirect: "/dior",
   time: 40,
 };
