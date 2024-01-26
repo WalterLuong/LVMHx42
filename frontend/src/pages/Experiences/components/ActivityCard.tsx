@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export type ActivityCardProps = {
   src: string;
@@ -52,7 +53,9 @@ const ActivityCard = (props: ActivityCardProps) => {
           </div>
           <p className='font-bold'>{props.discount}</p>
           <button className='border-2 border-white rounded-full backdrop-blur-lg'>
-            Y aller
+            <Link to='/coupon'>
+                Y aller
+            </Link>
           </button>
         </div>
       </div>

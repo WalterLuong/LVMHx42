@@ -16,6 +16,7 @@ import MyLV from "./pages/MyLV/MyLV.tsx";
 import MyQueue from "./pages/MyQueue/MyQueue.tsx";
 import Map from "./pages/Map/Map.tsx";
 import Tutorial from "./pages/Tutorial/Tutorial.tsx";
+import Coupon from "./pages/Coupon/Coupon.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -35,6 +36,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path='/join' element={<Join />} />
         <Route path='myqueue' element={<MyQueue />} />
         <Route path='map' element={<Map />} />
+        <Route path='/coupon' element={<Coupon />} />
       </Routes>
     </Router>
   </React.StrictMode>
