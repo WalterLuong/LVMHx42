@@ -30,7 +30,7 @@ const Join = () => {
             </div>
           </div>
           <span className='text-center bold p-4 flex justify-center w-full'>
-            <GroupIcon /> 5 personnes dans la queue
+            <GroupIcon /> 5 personnes dans la queue virtuelle
           </span>
         </motion.div>
 

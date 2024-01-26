@@ -16,7 +16,7 @@ import MyLV from "./pages/MyLV/MyLV.tsx";
 import MyQueue from "./pages/MyQueue/MyQueue.tsx";
 import Map from "./pages/Map/Map.tsx";
 import Tutorial from "./pages/Tutorial/Tutorial.tsx";
-import Coupon from "./pages/Coupon/Coupon.tsx";
+import Coupon from "./pages/coupon/Coupon.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
