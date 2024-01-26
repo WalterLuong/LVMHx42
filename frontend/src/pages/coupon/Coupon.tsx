@@ -2,9 +2,9 @@ import React from "react";
 
 const Coupon = () => {
     return <>
-        <div className='h-screen flex flex-col mt-[150px]'>
-            <div className='flex flex-col items-center justify-center w-full'>
-                <h1>
+        <div className='h-[60vh] justify-between flex flex-col mt-[150px]'>
+            <div className='flex text-center flex-col items-center justify-center w-full'>
+                <h1 className="text-xl uppercase">
                     Café Maxime Frédéric
                 </h1>
                 <div className='w-full '>
@@ -16,7 +16,7 @@ const Coupon = () => {
                     10% sur votre café
                 </h1>
                 <div className='flex justify-center items-center'>
-                    <button>Voir l'itinéraire</button>
+                    <button className="border border-black text-black py-4 px-8">Voir l'itinéraire</button>
                 </div>
             </div>
             
